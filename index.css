@@ -1,0 +1,26 @@
+body{
+	background:url(venados.jpg);
+}
+h1{
+	font-family: Calibri;
+	color: lime;
+	font-size: 30px;
+	text-align: left;
+}
+h4{
+	font-family: Calibri;
+	color: Red;
+	font-size: 30px;
+	text-align: left;
+}
+h2{
+	font-family: Calibri;
+	color: Orange;
+	font-size: 30px;
+}
+h3{
+	font-family: Calibri;
+	color: Gray;
+	font-size: 30px;
+	text-align: center;
+}
