@@ -1,39 +1,44 @@
 function limpiarFormulario(){
 	 document.getElementById("miForm").reset();
+
 }
-	 var comparar = function(n1, n2, n3){
+	var velocidad = function(n1, n2){
 	
- var numero1 = parseInt(document.getElementById("numero1").value);
- var numero2 = parseInt(document.getElementById("numero2").value);
- var numero3 = parseInt(document.getElementById("numero3").value);
- 
- if(numero1 <= numero2 && numero1 <= numero3)
- 	menor = numero1;
- else if(numero2 < numero1 && numero2 <= numero3)
- 	menor = numero2;
- else
- 	menor = numero3;
+ var n1 = parseFloat(document.getElementById("m").value);
+ var n2 = parseFloat(document.getElementById("s").value);
 
- return menor;
+ms=n1/n2;
+ return "VELOCIDAD ES DE "+ms+" m/s ";
 }
 
-function limpiarFormulario(){
-	 document.getElementById("miForm").reset();
+
+function limpiaFormulario(){
+	 document.getElementById("borrar").reset();
+
 }
-	 var conversion = function(d1){
+	var velocidadkm = function(n1, n2){
 	
- var distancia1 = parseInt(document.getElementById("distancia1").value);
- var resultado = distancia1 / 2.54;
+ var n1 = parseFloat(document.getElementById("km").value);
+ var n2 = parseFloat(document.getElementById("h").value);
 
- return resultado;
+kmh=n1/n2;
+ return "VELOCIDAD ES DE "+kmh+" km/h ";
 }
-function limpiarFormulario(){
-	 document.getElementById("miForm").reset();
+
+
+function limpFormulario(){
+	 document.getElementById("eliminar").reset();
+
 }
-     var cambio = function(l1){
+	var derivada = function(n1, n2){
 
-var longitud1 = parseInt(document.getElementById("longitud1").value);
-var resultado = longitud1 * 1.0936;
+ var n1 = parseFloat(document.getElementById("num").value);
+ var n2 = parseFloat(document.getElementById("ex").value);
 
-return resultado;
+derivada=n1*n2;
+exponente=n2-1;
+num=n1;
+ex=n2;
+ return "LA DERIVADA DE LA EXPRESION "+ num + "X" + "^" + ex + " ES : " + derivada +"X"+"^"+exponente;
+
 }
